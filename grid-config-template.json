@@ -1,0 +1,89 @@
+{
+  "comment": "网格交易策略配置模板",
+  "strategies": {
+    "btc_conservative": {
+      "name": "BTC保守型策略",
+      "description": "适合新手和小资金，风险较低",
+      "apiKey": "your_api_key_here",
+      "secretKey": "your_secret_key_here",
+      "symbol": "BTCUSD",
+      "marketIndex": 0,
+      "gridLower": 58000,
+      "gridUpper": 62000,
+      "gridNumber": 5,
+      "investmentPerGrid": 5,
+      "leverage": 5,
+      "checkInterval": 30000,
+      "stopLossPercent": 0.05,
+      "takeProfitRate": 1
+    },
+    "btc_aggressive": {
+      "name": "BTC激进型策略",
+      "description": "适合经验丰富交易者，风险较高",
+      "apiKey": "your_api_key_here",
+      "secretKey": "your_secret_key_here",
+      "symbol": "BTCUSD",
+      "marketIndex": 0,
+      "gridLower": 55000,
+      "gridUpper": 75000,
+      "gridNumber": 20,
+      "investmentPerGrid": 50,
+      "leverage": 20,
+      "checkInterval": 5000,
+      "stopLossPercent": 0.08,
+      "takeProfitRate": 1
+    },
+    "btc_neutral": {
+      "name": "BTC中性策略",
+      "description": "适合震荡行情，风险中等",
+      "apiKey": "your_api_key_here",
+      "secretKey": "your_secret_key_here",
+      "symbol": "BTCUSD",
+      "marketIndex": 0,
+      "gridLower": 63000,
+      "gridUpper": 67000,
+      "gridNumber": 8,
+      "investmentPerGrid": 20,
+      "leverage": 10,
+      "checkInterval": 15000,
+      "stopLossPercent": 0.05,
+      "takeProfitRate": 1
+    },
+    "eth_moderate": {
+      "name": "ETH温和策略",
+      "description": "以太坊网格策略示例",
+      "apiKey": "your_api_key_here",
+      "secretKey": "your_secret_key_here",
+      "symbol": "ETHUSD",
+      "marketIndex": 1,
+      "gridLower": 3000,
+      "gridUpper": 3500,
+      "gridNumber": 10,
+      "investmentPerGrid": 15,
+      "leverage": 8,
+      "checkInterval": 20000,
+      "stopLossPercent": 0.06,
+      "takeProfitRate": 1
+    }
+  },
+  "instructions": {
+    "1": "复制此文件为 grid-config.json",
+    "2": "API密钥配置（二选一）：",
+    "2a": "  - 方式A（推荐）：在 .env 文件中配置，此文件中保持 'your_api_key_here' 即可",
+    "2b": "  - 方式B：直接在此文件中填入 API 密钥（会覆盖 .env 配置）",
+    "3": "根据市场情况调整价格区间",
+    "4": "选择合适的策略配置",
+    "5": "运行命令: node grid-multi-runner.js <策略名>"
+  },
+  "parameter_guide": {
+    "gridLower": "网格下限价格，建议设为当前价格的 -10%",
+    "gridUpper": "网格上限价格，建议设为当前价格的 +10%",
+    "gridNumber": "网格数量，5-20之间，数量越多交易越频繁",
+    "investmentPerGrid": "每格投资金额，总投资 = 此值 × 网格数量",
+    "leverage": "杠杆倍数，5-20之间，越高风险越大",
+    "checkInterval": "价格检查间隔（毫秒），5000-30000，越短越及时",
+    "stopLossPercent": "止损百分比，0.05表示5%止损",
+    "takeProfitRate": "止盈率，通常设为1"
+  }
+}
+

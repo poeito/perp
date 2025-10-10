@@ -1,0 +1,51 @@
+{
+  "comment": "Backpack网格交易策略配置模板 - 复制此文件为 backpack-grid-config.json 后使用",
+  "strategies": {
+    "strategy_name_here": {
+      "name": "策略名称",
+      "description": "策略描述",
+      "apiKey": "your_api_key_here",
+      "apiSecret": "your_api_secret_here",
+      "symbol": "SOL_USDC",
+      "gridLower": 140,
+      "gridUpper": 160,
+      "gridNumber": 10,
+      "amountPerGrid": 0.1,
+      "orderType": "Limit",
+      "timeInForce": "Gtc",
+      "checkInterval": 20000,
+      "stopLossPercent": 0.05,
+      "maxPositionValue": 1000
+    }
+  },
+  "instructions": {
+    "1": "复制此文件为 backpack-grid-config.json",
+    "2": "填入你的 Backpack API Key 和 API Secret",
+    "3": "根据市场情况调整网格参数",
+    "4": "运行: node backpack-grid-runner.js <策略名称>"
+  },
+  "parameter_description": {
+    "name": "策略显示名称",
+    "description": "策略描述信息",
+    "apiKey": "Backpack API Key（必需）",
+    "apiSecret": "Backpack API Secret（必需）",
+    "symbol": "交易对，格式：BASE_QUOTE，如 SOL_USDC",
+    "gridLower": "网格下限价格（建议当前价格的-10%~-20%）",
+    "gridUpper": "网格上限价格（建议当前价格的+10%~+20%）",
+    "gridNumber": "网格数量（10-30之间）",
+    "amountPerGrid": "每格交易数量（基础币数量）",
+    "orderType": "订单类型：Limit（限价单）或 Market（市价单）",
+    "timeInForce": "订单有效期：Gtc（成交为止）或 Ioc（立即成交或取消）",
+    "checkInterval": "价格检查间隔（毫秒），10000-30000",
+    "stopLossPercent": "止损百分比，0.05表示5%",
+    "maxPositionValue": "最大持仓价值（可选）"
+  },
+  "supported_pairs": [
+    "SOL_USDC",
+    "BTC_USDC",
+    "ETH_USDC",
+    "JTO_USDC",
+    "其他Backpack支持的交易对"
+  ]
+}
+

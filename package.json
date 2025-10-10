@@ -1,0 +1,61 @@
+{
+  "name": "crypto-grid-trading",
+  "version": "1.0.0",
+  "description": "多交易所网格交易策略系统 - 支持 Bumpin 和 Backpack 交易所",
+  "main": "bumpin-api.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node setup.js",
+    "test": "node test.js",
+    "example": "node example.js",
+    "grid": "node grid-strategy-example.js",
+    "grid-short": "node grid-strategy-short-example.js",
+    "grid-test": "node test-grid-config.js",
+    "grid-list": "node grid-strategy-runner.js list",
+    "grid-run": "node grid-strategy-runner.js",
+    "grid-btc-conservative": "node grid-strategy-runner.js btc_conservative",
+    "grid-btc-aggressive": "node grid-strategy-runner.js btc_aggressive",
+    "grid-btc-neutral": "node grid-strategy-runner.js btc_neutral",
+    "grid-multi": "node grid-multi-runner.js",
+    "grid-all": "node grid-multi-runner.js all",
+    "backpack-list": "node backpack-grid-runner.js list",
+    "backpack-run": "node backpack-grid-runner.js",
+    "backpack-example": "node backpack-grid-example.js",
+    "backpack-sol-conservative": "node backpack-grid-runner.js sol_conservative",
+    "backpack-sol-aggressive": "node backpack-grid-runner.js sol_aggressive",
+    "backpack-btc-conservative": "node backpack-grid-runner.js btc_conservative"
+  },
+  "keywords": [
+    "bumpin",
+    "backpack",
+    "grid-trading",
+    "trading-bot",
+    "api",
+    "sdk",
+    "cryptocurrency",
+    "exchange",
+    "automated-trading",
+    "quantitative-trading"
+  ],
+  "author": "Bumpin Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.3",
+    "https-proxy-agent": "^7.0.2",
+    "node-fetch": "^2.6.7",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bumpin/bumpin-api-sdk-js"
+  },
+  "bugs": {
+    "url": "https://github.com/bumpin/bumpin-api-sdk-js/issues"
+  },
+  "homepage": "https://github.com/bumpin/bumpin-api-sdk-js#readme"
+}
+
